@@ -4,7 +4,7 @@ import useSWR from "swr";
 import type { AnalysisResponse } from "@/lib/types";
 import { DashboardContent } from "./DashboardContent";
 
-const API_BASE = ("https://vaunting-nonfactually-marin.ngrok-free.dev" || "http://localhost:8000").replace(/\/+$/, "");
+const API_BASE = (process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000").replace(/\/+$/, "");
 
 async function fetchDashboard(url: string): Promise<AnalysisResponse> {
   const res = await fetch(url, {

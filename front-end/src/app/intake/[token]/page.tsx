@@ -5,7 +5,7 @@ import { useParams } from "next/navigation";
 import { motion, AnimatePresence, useSpring, useMotionValue, useTransform } from "framer-motion";
 import AppleHealthSync from "@/components/AppleHealthSync";
 
-const API_BASE = (process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000").replace(/\/+$/, "");
+const API_BASE = ("https://vaunting-nonfactually-marin.ngrok-free.app").replace(/\/+$/, "");
 
 type Question = {
   id: number;

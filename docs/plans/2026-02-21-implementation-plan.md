@@ -1758,7 +1758,7 @@ git commit -m "feat(frontend): add DiagnosticNudgeAccordion with embedded PDF if
 // front-end/src/lib/api.ts
 import type { PatientPayload, AnalysisResponse } from "./types";
 
-const API_BASE = "https://vaunting-nonfactually-marin.ngrok-free.app" || "http://localhost:8000";
+const API_BASE = "https://vaunting-nonfactually-marin.ngrok-free.dev" || "http://localhost:8000";
 
 export async function analyzePatient(payload: PatientPayload): Promise<AnalysisResponse> {
   const res = await fetch(`${API_BASE}/api/v1/analyze-patient`, {

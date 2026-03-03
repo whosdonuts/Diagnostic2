@@ -5,7 +5,7 @@ import { useParams } from "next/navigation";
 import { motion, AnimatePresence, useSpring, useMotionValue, useTransform } from "framer-motion";
 import AppleHealthSync from "@/components/AppleHealthSync";
 
-const API_BASE = ("https://vaunting-nonfactually-marin.ngrok-free.app").replace(/\/+$/, "");
+const API_BASE = ("https://vaunting-nonfactually-marin.ngrok-free.dev").replace(/\/+$/, "");
 
 type Question = {
   id: number;
